@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Folio"
+       android:textAlignment="center"
+       android:id="@+id/txtFolio"
+       />
+
+ <EditText
+     android:id="@+id/txtMarca"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/txtFolio"
+     android:minHeight="48dp"
+     android:hint="Marca"
+     android:textAlignment="center"
+
+   />
+
+ <EditText
+     android:id="@+id/txtModelo"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/txtMarca"
+     android:minHeight="48dp"
+     android:hint="Modelo"
+     android:textAlignment="center"
+     />
+
+    <EditText
+        android:id="@+id/txtAño"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtModelo"
+        android:minHeight="48dp"
+        android:hint="Año"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txtColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAño"
+        android:hint="Color"
+        android:minHeight="48dp"
+        android:textAlignment="center" />
+
+ <EditText
+     android:id="@+id/txtSerie"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/txtColor"
+     android:minHeight="48dp"
+     android:hint="Serie"
+     android:textAlignment="center"
+     />
+
+    <EditText
+        android:id="@+id/txtPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSerie"
+        android:hint="Precio"
+        android:minHeight="48dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:id="@+id/btnBuscar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtPrecio"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:id="@+id/btnGuardar"
+        android:layout_below="@+id/txtPrecio"
+        android:layout_toLeftOf="@+id/btnBuscar"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:id="@+id/btnActualizar"
+        android:layout_below="@+id/txtPrecio"
+        android:layout_toRightOf="@+id/btnBuscar"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:id="@+id/btnEliminar"
+        android:layout_below="@+id/btnBuscar"
+        android:layout_centerHorizontal="true"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvAutos"
+        android:layout_below="@+id/btnEliminar"
+        />
+
+</RelativeLayout>
